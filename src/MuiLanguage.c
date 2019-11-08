@@ -145,7 +145,7 @@ static int _CheckAvailableLanguageDLLs()
                             (LPWSTR)&(MUI_LanguageDLLs[lng].LangId), sizeof(LANGID));
 
             // check for DLL
-            StringCchPrintf(wchRelPath, COUNTOF(wchRelPath), L"lng/%s/np3lng.dll.mui", MUI_LanguageDLLs[lng].szLocaleName);
+            StringCchPrintf(wchRelPath, COUNTOF(wchRelPath), L"%s/Notepad3-Mui.dll.mui", MUI_LanguageDLLs[lng].szLocaleName);
             PathAbsoluteFromApp(wchRelPath, wchAbsPath, COUNTOF(wchAbsPath), false);
             bool const bAvail = PathIsExistingFile(wchAbsPath);
             MUI_LanguageDLLs[lng].bHasDLL = bAvail;
@@ -362,7 +362,7 @@ LANGID LoadLanguageResources()
 
     if ((iPrefLngIndex >= 0) && MUI_LanguageDLLs[iPrefLngIndex].bHasDLL) {
         _hLangResourceContainer = (iPrefLngIndex == 0) ? Globals.hInstance :
-                                  LoadMUILibrary(L"lng/np3lng.dll", MUI_LANGUAGE_NAME | MUI_LANGUAGE_EXACT, MUI_LanguageDLLs[iPrefLngIndex].LangId);
+                                  LoadMUILibrary(L"Notepad3-Mui.dll", MUI_LANGUAGE_NAME | MUI_LANGUAGE_EXACT, MUI_LanguageDLLs[iPrefLngIndex].LangId);
         if (_hLangResourceContainer) {
             MUI_LanguageDLLs[0].bIsActive = false;
             MUI_LanguageDLLs[iPrefLngIndex].bIsActive = true;
