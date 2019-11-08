@@ -250,7 +250,7 @@ BEGIN
     "C",            IDM_EDIT_COPYLINE,                VIRTKEY, SHIFT, CONTROL, NOINVERT
     "D",            IDM_EDIT_DUPLINEORSELECTION,      VIRTKEY, CONTROL, NOINVERT
     "D",            IDM_EDIT_LINETRANSPOSE,           VIRTKEY, ALT, NOINVERT  /// NO Menu
-    "D",            IDM_EDIT_DELETELINE,              VIRTKEY, SHIFT, CONTROL, NOINVERT
+    "Y",            IDM_EDIT_DELETELINE,              VIRTKEY, CONTROL, NOINVERT
     "D",            IDM_EDIT_REMOVEDUPLICATELINES,    VIRTKEY, CONTROL, ALT, NOINVERT
     "E",            IDM_EDIT_COPYADD,                 VIRTKEY, CONTROL, NOINVERT
     "E",            IDM_EDIT_ESCAPECCHARS,            VIRTKEY, CONTROL, ALT, NOINVERT
@@ -314,7 +314,7 @@ BEGIN
     "S",            IDM_EDIT_CONVERTTABS,             VIRTKEY, SHIFT, CONTROL, NOINVERT
     //~"S",            MMMMMMMMMMMMMMMMMM,               VIRTKEY, ALT, NOINVERT  /// Menu(Settings)
     "T",            IDM_SET_TABSETTINGS,              VIRTKEY, CONTROL, NOINVERT
-    "T",            IDM_SET_ALWAYSONTOP,              VIRTKEY, ALT, NOINVERT  /// NO Menu
+    VK_F4,          IDM_SET_ALWAYSONTOP,              VIRTKEY, NOINVERT  /// NO Menu
     "T",            IDM_EDIT_CONVERTSPACES2,          VIRTKEY, CONTROL, ALT, NOINVERT
     "T",            IDM_EDIT_CONVERTSPACES,           VIRTKEY, SHIFT, CONTROL, NOINVERT
     "U",            IDM_EDIT_CONVERTLOWERCASE,        VIRTKEY, CONTROL, NOINVERT
@@ -333,7 +333,6 @@ BEGIN
     "X",            IDM_EDIT_INSERT_TAG,              VIRTKEY, ALT, NOINVERT  /// NO Menu
     "X",            IDM_EDIT_CHAR2HEX,                VIRTKEY, CONTROL, ALT, NOINVERT
     "X",            IDM_EDIT_CUTLINE,                 VIRTKEY, SHIFT, CONTROL, NOINVERT
-    "Y",            IDM_EDIT_REDO,                    VIRTKEY, CONTROL, NOINVERT
     "Y",            IDM_EDIT_MERGEEMPTYLINES,         VIRTKEY, ALT, NOINVERT  /// NO Menu
     "Y",            IDM_EDIT_UNDO,                    VIRTKEY, SHIFT, CONTROL, NOINVERT
     "Y",            IDM_EDIT_MERGEBLANKLINES,         VIRTKEY, CONTROL, ALT, NOINVERT
@@ -387,7 +386,7 @@ BEGIN
     VK_F3,          IDM_EDIT_SAVEFIND,                VIRTKEY, ALT, NOINVERT
     VK_F3,          IDM_EDIT_FINDPREV,                VIRTKEY, SHIFT, NOINVERT
     VK_F3,          CMD_FINDPREVSEL,                  VIRTKEY, SHIFT, CONTROL, NOINVERT
-    VK_F4,          IDM_EDIT_REPLACENEXT,             VIRTKEY, NOINVERT
+    //VK_F4,          IDM_EDIT_REPLACENEXT,             VIRTKEY, NOINVERT
     VK_F4,          IDM_FILE_NEW,                     VIRTKEY, CONTROL, NOINVERT
     VK_F5,          IDM_FILE_REVERT,                  VIRTKEY, NOINVERT
     VK_F5,          IDM_EDIT_INSERT_SHORTDATE,        VIRTKEY, CONTROL, NOINVERT
