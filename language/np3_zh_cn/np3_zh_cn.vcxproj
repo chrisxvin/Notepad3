@@ -314,7 +314,6 @@
         "$(UCRTContentRoot)bin\$(TargetPlatformVersion)\$(PlatformShortName)\muirct.exe" -c "$(TargetDir)..\np3lng.dll" -e "$(TargetDir)..\zh-CN\np3lng.dll.mui"
 
         mkdir "$(TargetDir)..\..\zh-CN"
-        copy /Y "$(TargetDir)..\np3lng.dll" "$(TargetDir)..\..\Notepad3-Mui.dll"
         copy /Y "$(TargetDir)..\zh-CN\np3lng.dll.mui" "$(TargetDir)..\..\zh-CN\Notepad3-Mui.dll.mui"
       </Command>
       <Message>MUI Split</Message>
